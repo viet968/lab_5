@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:padding="@dimen/_8sdp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/txtStudentId"
+        android:text="Mã: DH13579986"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/txtStudentName"
+        android:text="Tên: Trần Văn Tèo"
+        android:textSize="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_below="@+id/txtStudentId"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/txtBirth"
+        android:text="Ngày sinh: 12/12/2099"
+        android:layout_below="@+id/txtStudentName"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/txtClass"
+        android:text="Lớp: D99_TH03"
+        android:layout_toEndOf="@id/txtStudentName"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@color/black"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/txtPhai"
+        android:text="Nam"
+        android:layout_toEndOf="@id/txtClass"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/cbPhai"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
+        android:layout_toEndOf="@+id/txtPhai"
+        android:layout_marginTop="-5dp"
+        android:button="@drawable/custom_check_box"
+        android:checked="true"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btEditStudent"
+        android:layout_toStartOf="@+id/btRemoveStudent"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_11sdp"
+        android:layout_below="@id/txtClass"
+        android:text="Sửa"
+        android:textColor="@color/white"
+        android:backgroundTint="#2196F3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btRemoveStudent"
+        android:layout_below="@+id/txtClass"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_11sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:text="Xóa"
+        android:textColor="@color/white"
+        android:backgroundTint="#ff00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
